@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 96px;
+    color: #121212;
+}
+
+h2 {
+    font-family: 'SFMono-Regular', 'Space Mono', monospace;
+    font-size: 24 px;
+    color: #121212;
+    padding-left: 10vh;
+
+}
+
+h3 {
+    font-family: 'SFMono-Regular', 'Space Mono', monospace;
+    font-size: 20px;
+    color: #121212;
+    padding-left: 10vh;
+
+}
+
+h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17px;
+    color: #121212;
+}
+
+
+p {
+    font-family: 'SFMono-Regular', 'Space Mono', monospace;
+    font-size: 15px;
+    color: #121212;
+
+}
+
+header {
+    text-align: center;
+    padding: 10%;
+    display: inline-block;
+    background-image: url("../images/Mancha.svg");
+    background-position-x: -100px;
+    background-position-y: 190px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.subtitle {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 48px;
+
+}
+
+header p {
+    font-family: 'SFMono-Regular', 'Space Mono', monospace;
+    font-size: 17px;
+
+}
+
+.navbar-project {
+    text-align: center;
+}
+
+.project-section a {
+    text-decoration: none;
+}
+
+.project-section a :visited {
+    color: #121212;
+}
+
+.projects {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    border-style: solid;
+    columns: 2;
+    column-width: 20px;
+    display: flex;
+}
+
+.projects p {
+    margin-left: 2%;
+}
+
+.projects h4 {
+    margin-left: 2%;
+}
+
+.arrow-project {
+    object-fit: cover;
+    object-position: center;
+    width: 56px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-project img {
+    max-width:24px;
+    height:auto;
+ 
+}
+
+.about {
+    padding: 10%;
+    columns: 2;
+    display: inline-flex;
+}
+
+#photo-about {
+    object-fit: cover;
+    object-position: center center;
+    max-width: 50%;
+    max-height: 100%;
+
+}
+
+#text-about {
+    padding-left: 10%;
+}
+
+.email {
+    font-family: 'SFMono-Regular', 'Space Mono', monospace;
+    font-size: 20px;
+    color: #121212;
+    padding-left: 10vh;
+}
+
+footer {
+    font-family: 'SFMono-Regular', 'Space Mono', monospace;
+    font-size: 15px;
+    color: #121212;
+    padding: 10vh;
+    text-align: center;
+}
+
+#ProyectosGraficos {
+    display: none;
+}
+
+#ProyectoAV {
+    display: none;
+}
+
+#ProyectosUXUI {
+    display: block;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+.boxyellow {
+    height: 56px;
+    width: 56px; 
+    display: flex;
+    background-image: url("../images/IconosRRSS.svg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxyellow img {
+    height: 56px;
+    width: 56px; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+#linkedin {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+}
+
+#linkedin img{
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: inline-flexbox;
+    background-image: url("../images/Mancha.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 185%;
+    justify-content: center;
+    align-items: center;
+
+}
