@@ -15,9 +15,13 @@
 
 <body>
     <div id="navbar">
-        <a href="#navbar-project">proyectos</a>
-        <a href="#">about</a>
-        <a href="#contact">contact</a>
+        <a href="#proyectos" id="nv-projects">proyectos</a>
+        <a href="#about" id="nv-about">about</a>
+        <a href="#contact" id="nv-contact">contact</a>
+        <a class="nv-correo" href="https://www.linkedin.com/in/soydavidparamo/" target="_blank">linkedIn</a>
+        <a class="nv-correo" href="https://www.behance.net/davidparamo" target="_blank">behance</a>
+        <a class="nv-correo" href="mailto:davidparamoreina@gmail.com" target="_blank">correo</a>
+        
     </div>
     <header>
         <div>
@@ -30,32 +34,31 @@
         <div class="socialmedia">
             <div class="boxyellow">
                 <div id=linkedin>
-                    <img src="images/linkedin.svg" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/in/soydavidparamo/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
                 </div>
             </div>
             <div class="boxyellow">
                 <div id=linkedin>
-                    <img src="images/behance.svg" alt="LinkedIn">
+                        <a href="https://www.behance.net/davidparamo" target="_blank"><img src="images/behance.svg" alt="LinkedIn"></a>
                 </div>
             </div>
             <div class="boxyellow">
                 <div id=linkedin>
-                    <img src="images/instagram.svg" alt="LinkedIn">
+                        <a href="https://www.instagram.com/soydavidparamo" target="_blank"><img src="images/instagram.svg" alt="LinkedIn"></a>
                 </div>
             </div>
             <div class="boxyellow">
                 <div id=linkedin>
-                    <img src="images/correo.svg" alt="LinkedIn">
+                        <a href="mailto:davidparamoreina@gmail.com" target="_blank"><img src="images/correo.svg" alt="LinkedIn"></a>
                 </div>
             </div>
         </div>
         </p>
     </header>
 
-    <section>
-        <h2>proyectos</h2>
+    <section id="proyectos">
         <div class="navbar-project">
-            <p><button id="uxui">UX / UI</button> - <button id="grafico">gráficos</button> - <button
+                <h2>proyectos</h2> <p><button id="uxui">UX / UI</button> <button id="grafico">gráficos</button> <button
                     id="av">audiovisuales</button>
         </div>
         <div class="project-section" id="ProyectosUXUI">
@@ -186,8 +189,8 @@
         </div>
     </section>
 
-    <section>
-        <h2>about</h2>
+    <section id="about">
+        <h2 >about</h2>
         <div class="about">
             <img id="photo-about" src="https://picsum.photos/id/1000/5626/3635" alt="Una foto de David">
             <p id="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -199,11 +202,11 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>contact</h2>
-        <div class="email">
-            <p><a href="mailto:davidparamoreina@gmail.com">davidparamoreina@gmail.com</a></p>
-            <p><a href="tel:+34 622 63 19 82">Llámame</a></p>
+        <div class="email">        
+        <p> <button id="ft-correo"><a href="mailto:davidparamoreina@gmail.com">Hablemos por mail</a></button>
+            <button id="ft-correo"><a href="tel:+34 622 63 19 82">Llámame</a></button>
         </div>
     </section>
     <footer>

@@ -13,7 +13,7 @@ h2 {
     font-size: 24 px;
     color: #121212;
     padding-left: 10vh;
-
+   
 }
 
 h3 {
@@ -36,6 +36,10 @@ p {
     font-size: 15px;
     color: #121212;
 
+}
+
+section {
+    padding-top: 5%;
 }
 
 
@@ -100,7 +104,8 @@ header p {
 }
 
 .navbar-project {
-    text-align: center;
+    display: flex;
+    justify-content: flex; 
 }
 
 .project-section a {
@@ -165,6 +170,17 @@ header p {
 
 #text-about {
     padding-left: 10%;
+
+}
+
+#ft-correo a{
+    text-decoration: none;
+    color: #121212;
+}
+
+#ft-correo a:hover {
+    text-decoration: none;
+    color: #FFD900;
 }
 
 .email {
@@ -234,7 +250,7 @@ footer {
 }
 
 footer {
-    display: inline-flexbox;
+    display: flex;
     background-image: url("../images/Mancha.svg");
     background-position: top;
     background-repeat: no-repeat;
@@ -242,6 +258,36 @@ footer {
     justify-content: center;
     align-items: center;
 
+}
+
+button{
+    display: inline-block;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 45px;
+    min-width: 100px;
+    background: #FFD900;
+    border: none;
+    outline: none;
+    color: #121212;
+    font-size: 17PX;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+button:hover{
+        background: #121212;
+        color: #FFD900;
+        transition: all 0.1s ease-in;
+      }
+      
+button:active{
+        background: #121212;
+        color: #FFD900;
+        border-bottom-width: 2px;
+        border-color: black;
 }
 
 @media screen and (min-width: 1441px){
@@ -261,4 +307,104 @@ footer {
         width: 100%;
     }
     
+}
+
+@media screen and (max-width: 414px) {
+    header {
+        display: block;
+        background-size: 320%;
+        background-position-x: 20px;
+        background-position-y: 40px;
+    }
+
+    .navbar-project {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        }
+
+    h1 {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 48px;
+        color: #121212;
+
+        }
+
+    h2 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    h3 {
+        display: none;
+
+    }
+
+    .subtitle {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 28px;
+            
+        }        
+        
+    #navbar  {
+        background-image: none;
+    }
+
+    .nv-correo{
+        visibility: hidden;
+    }
+
+    .navbar-project{
+        display: block;
+        flex-direction: column;
+    }
+
+    button{
+        padding: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        height: 45px;
+        min-width: 80%;
+    }
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #text-about {
+        padding-left: 3%;
+    }
+
+    #photo-about {
+        object-fit: none
+        object-position: ;
+        max-width: 100%;
+    
+    }
+
+    .email {
+        padding-left: 0;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 10%;
+    }
+     
+}
+
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+}
 }
