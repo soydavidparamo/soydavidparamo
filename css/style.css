@@ -91,7 +91,7 @@ header p {
   }
   
   #navbar a:hover {
-    background-color: #ddd;
+    background-color: #FFD900;
     color: black;
   }
 
@@ -144,7 +144,7 @@ header p {
     align-items: center;
 }
 
-.arrow-project img {
+.arrow-project img{
     max-width:24px;
     height:auto;
  
@@ -171,6 +171,12 @@ header p {
 #text-about {
     padding-left: 10%;
 
+}
+
+.about-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 #ft-correo a{
