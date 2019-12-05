@@ -38,9 +38,6 @@ p {
 
 }
 
-body {
-    max-width: 1200vw;
-}
 
 header {
     text-align: center;
@@ -245,4 +242,23 @@ footer {
     justify-content: center;
     align-items: center;
 
+}
+
+@media screen and (min-width: 1441px){
+    body{
+       display: block;
+       align-items: center;
+    }
+
+    header {
+        display: block;
+        background-position-x: 1vmax;
+        background-position-y: 20vh;
+        background-size: 80%;
+    }
+
+    .navbar-project {
+        width: 100%;
+    }
+    
 }
