@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family:'Montserrat Alternates';
+    src: url(../fonts/MontserratAlternates-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family:'SFMono-Regular';
+    src: url(../fonts/SFMono-Regular.otf);
+}
+
 h1 {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 96px;
@@ -66,6 +76,13 @@ header p {
     font-family: 'SFMono-Regular', 'Space Mono', monospace;
     font-size: 17px;
 
+}
+.arrow-project img{
+    max-width:24px;
+    height: auto;
+}
+.arrow-project a{
+    width: 50% !important;
 }
 
 #navbar {
@@ -144,56 +161,62 @@ header p {
     align-items: center;
 }
 
-.arrow-project img{
-    max-width:24px;
-    height:auto;
- 
-}
-
 .int-projects {
     width: 100%;
 }
 
 .about {
-    padding: 10%;
-    columns: 2;
-    display: inline-flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
 }
 
 #photo-about {
+    max-width: 50%;
+    padding-right: 5%;
     object-fit: cover;
     object-position: center center;
-    max-width: 50%;
-    max-height: 100%;
-
 }
 
-#text-about {
-    padding-left: 10%;
-
+.textandrrss-about {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-icons {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
 }
 
-#ft-correo a{
+ #ft-correo a{
+    display: inline-block;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 45px;
+    min-width: 100px;
+    background: #FFD900;
+    border: none;
+    outline: none;
+    color: #121212;
+    font-size: 17PX;
+    border-radius: 3px;
     text-decoration: none;
     color: #121212;
 }
-
-#ft-correo a:hover {
-    text-decoration: none;
+#ft-correo a:hover{
+    background: #121212;
     color: #FFD900;
-}
+    transition: all 0.1s ease-in;
+  }
 
 .email {
     font-family: 'SFMono-Regular', 'Space Mono', monospace;
     font-size: 20px;
     color: #121212;
-    padding-left: 10vh;
+    margin-left: 10vw;
 }
 
 footer {
@@ -239,6 +262,10 @@ footer {
     width: 56px; 
     justify-content: center;
     align-items: center;
+}
+
+.boxyellow img:hover {
+    fill: red;
 }
 
 
@@ -315,7 +342,7 @@ button:active{
     
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 534px) {
     header {
         display: block;
         background-size: 320%;
@@ -374,6 +401,19 @@ button:active{
         min-width: 80%;
     }
 
+    #ft-correo a{
+        padding: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        height: 45px;
+        min-width: 80%;
+        text-align: center;
+    }
+
+    .email {
+        margin-left: 0;
+    }
 
     .about {
         display: flex;
@@ -382,19 +422,19 @@ button:active{
         align-content: center;
     }
 
-    #text-about {
-        padding-left: 3%;
-    }
-
     #photo-about {
-        object-fit: none
-        object-position: ;
-        max-width: 100%;
-    
+        object-fit: cover;
+        object-position: center;
+        max-width: 110%;
+        margin-bottom: 5%;
     }
 
-    .email {
-        padding-left: 0;
+    .textandrrss-about {
+        max-width: 100%; 
+    }
+
+    #text-about {
+    margin-bottom: 10%;
     }
 
     footer {
@@ -405,7 +445,7 @@ button:active{
 }
 
 
-@media screen and (min-width: 415px) and (max-width: 768px) {
+@media screen and (min-width: 535px) and (max-width: 768px) {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
