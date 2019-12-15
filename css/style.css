@@ -171,6 +171,8 @@ header p {
     display: flex;
 }
 
+
+
 #photo-about {
     max-width: 50%;
     padding-right: 5%;
@@ -323,6 +325,29 @@ button:active{
         border-color: black;
 }
 
+#ab-spotify a{
+    display: inline-block;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 45px;
+    min-width: 100px;
+    background: #FFD900;
+    border: none;
+    outline: none;
+    color: #121212;
+    font-size: 17PX;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #121212;
+}
+
+#ab-spotify a:hover{
+    background: #1db954;
+    color: #FFffff;
+    transition: all 0.1s ease-in;
+  }
+
 @media screen and (min-width: 1441px){
     body{
        display: block;
@@ -424,7 +449,7 @@ button:active{
 
     #photo-about {
         object-fit: cover;
-        object-position: center;
+        object-position: center center;
         max-width: 110%;
         margin-bottom: 5%;
     }
