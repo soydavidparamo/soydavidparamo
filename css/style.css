@@ -165,6 +165,42 @@ header p {
     width: 100%;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    width: 65%;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    transition: all 500ms ease-in-out;
+    margin: 20% auto;    
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
 .about {
     margin-left: 10vw;
     margin-right: 10vw;
@@ -195,8 +231,7 @@ header p {
  #ft-correo a{
     display: inline-block;
     padding: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     height: 45px;
     min-width: 100px;
     background: #FFD900;
@@ -209,6 +244,29 @@ header p {
     color: #121212;
 }
 #ft-correo a:hover{
+    background: #121212;
+    color: #FFD900;
+    transition: all 0.1s ease-in;
+  }
+
+
+#botonpopup a{
+    display: inline-block;
+    padding: 15px;
+    margin-right: 20px;
+    height: 45px;
+    min-width: 100px;
+    background: #FFD900;
+    border: none;
+    outline: none;
+    color: #121212;
+    font-size: 17PX;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #121212;
+}
+
+#botonpopup a:hover{
     background: #121212;
     color: #FFD900;
     transition: all 0.1s ease-in;
@@ -426,6 +484,16 @@ button:active{
         min-width: 80%;
     }
 
+    #popupBody{
+        width: 90%;
+        margin: 25% auto; 
+        padding-left: 10%;
+    }
+
+    #popupBody #ft-correo a {
+
+    }
+
     #ft-correo a{
         padding: 15px;
         margin-left: 10%;
@@ -477,5 +545,4 @@ button:active{
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-}
 }
