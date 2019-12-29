@@ -85,6 +85,17 @@ header p {
     width: 50% !important;
 }
 
+.arrow-project:hover{
+    background-color: #FFD900;
+    transition: all 0.1s ease-in;
+    object-fit: cover;
+    object-position: center;
+    width: 56px;
+    position: relative;
+}
+
+
+
 #navbar {
     position: fixed; /* Make it stick/fixed */
     top: -50; 
@@ -176,10 +187,12 @@ header p {
     visibility: hidden;
     opacity: 0;
 }
+
 .overlay:target {
     visibility: visible;
     opacity: 1;
 }
+
 #popupBody{
     width: 65%;
     padding: 5%;
@@ -190,6 +203,7 @@ header p {
     transition: all 500ms ease-in-out;
     margin: 20% auto;    
 }
+
 #cerrar{
     position: absolute;
     top: 20px;
@@ -227,6 +241,27 @@ header p {
     display: flex;
     justify-content: space-around;
 }
+#cookie_yes{
+    display: inline-block;
+    padding: 15px;
+    margin-right: 20px;
+    height: 45px;
+    min-width: 100px;
+    background: #1db954;
+    border: none;
+    outline: none;
+    color: #121212;
+    font-size: 17PX;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #121212;
+}
+
+#cookie_yes:hover{
+    background: #121212;
+    color: #1db954;
+    transition: all 0.1s ease-in;
+  }
 
  #ft-correo a{
     display: inline-block;
@@ -355,6 +390,7 @@ footer {
 
 button{
     display: inline-block;
+    font-family: 'SFMono-Regular', 'Space Mono', monospace;
     padding: 15px;
     margin-left: 10px;
     margin-right: 10px;
@@ -406,6 +442,36 @@ button:active{
     transition: all 0.1s ease-in;
   }
 
+  .textlegalcookies {
+      margin-left: 10vh;
+      margin-right: 10vh;
+      margin-bottom: 10vh;
+  }
+
+  .cookie-disclaimer {
+    background: #121212;
+    opacity: 0.9;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 25%;
+    position: fixed;
+  }  
+
+  .cookie-disclaimer p {
+      color: #FFF;
+  }
+  .container {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+
+  
 @media screen and (min-width: 1441px){
     body{
        display: block;
@@ -475,6 +541,15 @@ button:active{
         flex-direction: column;
     }
 
+    #cookie_yes{
+            padding: 15px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 20px;
+            height: 45px;
+            min-width: 80%;
+    }
+
     button{
         padding: 15px;
         margin-left: 10%;
@@ -490,9 +565,6 @@ button:active{
         padding-left: 10%;
     }
 
-    #popupBody #ft-correo a {
-
-    }
 
     #ft-correo a{
         padding: 15px;
@@ -533,6 +605,10 @@ button:active{
     footer {
         text-align: center;
         padding-top: 10%;
+    }
+
+    .cookie-disclaimer {
+        height: 40%;
     }
      
 }

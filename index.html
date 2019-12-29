@@ -16,6 +16,7 @@
         <a href="#proyectos" id="nv-projects">proyectos</a>
         <a href="#about" id="nv-about">about</a>
         <a href="#contact" id="nv-contact">contact</a>
+        <a href="cookies.html" id="nv-contact">cookies</a>
         <a class="nv-correo" href="https://www.linkedin.com/in/soydavidparamo/" target="_blank">linkedIn</a>
         <a class="nv-correo" href="https://www.behance.net/davidparamo" target="_blank">behance</a>
         <a class="nv-correo" href="mailto:davidparamoreina@gmail.com" target="_blank">correo</a>
@@ -26,9 +27,10 @@
             <div class="subtitle"> ¡Hola! Soy</div>
             <h1>David Páramo</h1>
             <p>¡Bienvenido a mi porfolio!</p>
-             <p> En esta web encontrarás un pedacito de mí. Podrás acceder a los trabajos
-                    que he ido haciendo a lo largo de mi trayectoria profesional.</p>
-                <p> En este momento estoy haciendo cambios, así que si notas algún fallo ¡Comunícamelo 🙏! Te lo agradeceré eternamente 😉 </p>
+            <p> En esta web encontrarás un pedacito de mí. Podrás acceder a los trabajos
+                que he ido haciendo a lo largo de mi trayectoria profesional.</p>
+            <p> En este momento estoy haciendo cambios, así que si notas algún fallo ¡Comunícamelo 🙏! Te lo agradeceré
+                eternamente 😉 </p>
         </div>
 
         <div class="socialmedia">
@@ -72,14 +74,13 @@
             <div class="projects">
                 <div class="int-projects">
                     <h4>AIDA</h4>
-                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua.
-                    </p>-->
+                    <p>LLa verdad que empezar un post con la frase "¿Nunca os ha pasado…?" no es muy original 😂 Pero es
+                        que la ansiedad, la angustia y la…
+                    </p>
                 </div>
                 <div class="arrow-project">
-                    <a href="#popup" style="width: 30%"><img src="images/arrow.svg" alt="Ir a proyecto"></a>
+                    <a href="https://medium.com/@soydavidparamo/case-study-aida-4624ee9f079"
+                        target="_blank"><img src="images/arrow.svg" alt="Ir a proyecto"></a>
                 </div>
 
             </div>
@@ -113,14 +114,13 @@
             <div class="projects">
                 <div class="int-projects">
                     <h4>Autoescuelas CISANZ</h4>
-                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua.
-                    </p>-->
+                    <p>La segunda semana en Ironhack nos tuvimos que enfrentar a uno de los retos más complicados.
+                        Conocer un negocio local y darle una propuesta de valor digital...
+                    </p>
                 </div>
                 <div class="arrow-project">
-                    <a href="#popup"><img src="images/arrow.svg" alt="Ir a proyecto"></a>
+                    <a href="https://medium.com/@soydavidparamo/5582da74de7?source=friends_link&sk=7ad9cd2a9e720bd99aa6e36765f832d9"
+                        target="_blank"><img src="images/arrow.svg" alt="Ir a proyecto"></a>
                 </div>
             </div>
         </div>
@@ -226,6 +226,16 @@
         </div>
     </div>
 
+    <div id="cookies" class="overlay">
+        <div id="popupBody">
+            <h4>Política de cookies</h4>
+            <a id="cerrar" href="#">&times;</a>
+            <div class="popupContent">
+                <p><span id="botonpopup"><a href="#" target="_blank">Ver política de cookies</a></span></p>
+            </div>
+        </div>
+    </div>
+
     <section id="about">
         <h2>about</h2>
         <div class="about">
@@ -276,12 +286,25 @@
                 <span id="ft-correo"><a href="tel:+34 622 63 19 82">Llámame</a></span>
         </div>
     </section>
+
+    <div class="cookie-disclaimer">
+        <div class="container">
+            <p>Utilizo cookies para asegurar la mejor experiencia al usuario en mi web. Si
+                continúas utilizando este sitio asumiré que estás de acuerdo.</p>
+            <button id="cookie_yes" class="btn btn-success accept-cookie">Estoy de acuerdo</button>
+            <button id="ft-correo" class="btn btn-danger decline-cookie">Ver política de cookies</button>
+        </div>
+    </div>
+
+
     <footer>
         Made with ♥️ in Madrid
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="js/hide.js"></script>
+
+
 </body>
 
 
