@@ -87,13 +87,22 @@ header p {
 
 .arrow-project:hover{
     background-color: #FFD900;
-    transition: all 0.1s ease-in;
+    transition: all 0.3s ease-in-out;
     object-fit: cover;
     object-position: center;
     width: 56px;
     position: relative;
+    background-image: url(../images/arrowhover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 28px;
+    width: 10%;
 }
 
+.arrow-project:hover img{
+    visibility: hidden;
+    background-image: url("../images/arrowhover.svg");
+}
 
 
 #navbar {
@@ -359,10 +368,10 @@ footer {
     align-items: center;
 }
 
-.boxyellow img:hover {
-    fill: red;
+.boxyellow:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease-in;
 }
-
 
 #linkedin {
     height: 32px;
@@ -611,6 +620,9 @@ button:active{
         height: 40%;
     }
      
+    .arrow-project:hover{
+        width: 33%;
+    }
 }
 
 
