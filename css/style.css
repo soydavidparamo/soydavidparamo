@@ -63,7 +63,6 @@ header {
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    
 }
 
 .subtitle {
@@ -107,11 +106,12 @@ header p {
 
 #navbar {
     position: fixed; /* Make it stick/fixed */
-    top: -50; 
+    top: 0; 
     width: 100%; 
     transition: top 0.3s;
     font-family: 'SFMono-Regular', 'Space Mono', monospace;
-    font-size: 12px;    
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.85);    
 
 
      /* Transition effect when sliding down (and up) */
