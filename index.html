@@ -439,61 +439,15 @@
         </div>
     </section>
 
-    <!--//BLOQUE COOKIES-->
-<div id="barraaceptacion" style="display: block;">
-    <div class="inner">
-        <p>Utilizo cookies para asegurar la mejor experiencia al usuario en mi web. Si
-                continúas utilizando este sitio asumiré que estás de acuerdo.
-        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
-        <a href="http://politicadecookies.com" target="_blank" class="info">Más información</a></p>
-    </div>
-</div>
- 
-<script>
-function getCookie(c_name){
-    var c_value = document.cookie;
-    var c_start = c_value.indexOf(" " + c_name + "=");
-    if (c_start == -1){
-        c_start = c_value.indexOf(c_name + "=");
-    }
-    if (c_start == -1){
-        c_value = null;
-    }else{
-        c_start = c_value.indexOf("=", c_start) + 1;
-        var c_end = c_value.indexOf(";", c_start);
-        if (c_end == -1){
-            c_end = c_value.length;
-        }
-        c_value = unescape(c_value.substring(c_start,c_end));
-    }
-    return c_value;
-}
- 
-function setCookie(c_name,value,exdays){
-    var exdate=new Date();
-    exdate.setDate(exdate.getDate() + exdays);
-    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-    document.cookie=c_name + "=" + c_value;
-}
- 
-if(getCookie('tiendaaviso')!="1"){
-    document.getElementById("barraaceptacion").style.display="block";
-}
-function PonerCookie(){
-    setCookie('tiendaaviso','1',365);
-    document.getElementById("barraaceptacion").style.display="none";
-}
-</script>
-<!--//FIN BLOQUE COOKIES-->
-
-   <!-- <div class="cookie-disclaimer">
+   
+<div class="cookie-disclaimer">
         <div class="container">
             <p>Utilizo cookies para asegurar la mejor experiencia al usuario en mi web. Si
                 continúas utilizando este sitio asumiré que estás de acuerdo.</p>
             <button id="cookie_yes" class="btn btn-success accept-cookie">Estoy de acuerdo</button>
             <button id="ft-correo" class="btn btn-danger decline-cookie">Ver política de cookies</button>
         </div>
-    </div>-->
+    </div>
 
 
     <footer>
