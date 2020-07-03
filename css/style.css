@@ -338,6 +338,10 @@ footer {
     display: none;
 }
 
+#ProyectosWebDesign {
+    display: none;
+}
+
 #ProyectosUXUI {
     display: block;
 }
