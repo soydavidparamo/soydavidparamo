@@ -90,7 +90,7 @@ jQuery(document).ready(function() {
   });
   //delete cookie on click
   $('.decline-cookie').click(function () {
-      alert("cookie declined!");
+      alert("Consulta la política de privacidad.");
       deleteCookie();
   });
 });
