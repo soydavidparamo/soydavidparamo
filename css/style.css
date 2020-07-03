@@ -332,18 +332,22 @@ footer {
 
 #ProyectosGraficos {
     display: none;
+    transition: all 0.1s ease-in-out;
 }
 
 #ProyectoAV {
     display: none;
+    transition: all 0.1s ease-in-out;
 }
 
 #ProyectosWebDesign {
     display: none;
+    transition: all 0.1s ease-in-out;
 }
 
 #ProyectosUXUI {
     display: block;
+    transition: all 0.1s ease-in-out;
 }
 
 .socialmedia {
@@ -406,13 +410,14 @@ button{
     padding: 15px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
     height: 45px;
     min-width: 100px;
     background: #FFD900;
     border: none;
     outline: none;
     color: #121212;
-    font-size: 17PX;
+    font-size: 17px;
     border-radius: 3px;
     text-decoration: none;
 
@@ -513,8 +518,7 @@ button:active{
   }
 
   .cookie-disclaimer {
-    background: #121212;
-    opacity: 0.9;
+    background: rgb(0, 0, 0, 0.5)
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
