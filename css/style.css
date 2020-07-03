@@ -536,6 +536,7 @@ button:active{
   
   #barraaceptacion {
     display:none;
+    font-family: 'SFMono-Regular', 'Space Mono', monospace;
     position:fixed;
     left:0px;
     right:0px;
