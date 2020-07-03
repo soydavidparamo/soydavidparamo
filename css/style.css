@@ -516,7 +516,7 @@ button:active{
   }
 
   .cookie-disclaimer {
-    background: rgb(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5)
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
