@@ -497,7 +497,7 @@ button:active{
     border: none;
     outline: none;
     color: #121212;
-    font-size: 17PX;
+    font-size: 17px;
     border-radius: 3px;
     text-decoration: none;
     color: #121212;
@@ -516,7 +516,8 @@ button:active{
   }
 
   .cookie-disclaimer {
-    background: rgba(0, 0, 0, 0.5)
+    background: #121212;
+    opacity: 70%;
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
@@ -525,6 +526,7 @@ button:active{
     z-index: 1;
     height: 25%;
     position: fixed;
+    transition: all 0.1s ease-in-out;
   }  
 
   .cookie-disclaimer p {
